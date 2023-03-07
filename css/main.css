@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* variables */
+:root {
+    --fros-blue-color: #0050d5;
+    --light-blue-color: #16c5ff;
+    --dark-color: #202020;
+    --light-gray: #dedede;
+    --dark-gray: #a1a1a0;
+    --light-color: #fff;
+    --poppins-font: 'Poppins', sans-serif;
+    --transition: all 0.3s ease-in-out;
+    --box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* some resets */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: var(--poppins-font);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+/*
+.head-container {
+    width: auto;
+    height: 100px;
+    background-color: #0050d5;
+    align-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 18%, rgba(0, 212, 255, 1) 100%);
+    padding: 2em;
+
+}
+*/
+.parent1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+
+
+.div1 {
+    background-image: url(/images/clinicafoto.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    grid-area: 1 / 1 / 3 / 2;
+    width: 100%;
+    height: 400px;
+    z-index: +1;
+}
+
+.div1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background: rgb(31, 88, 255);
+    background: linear-gradient(103deg, rgba(31, 88, 255, 0.6334908963585435) 24%, rgba(0, 0, 0, 1) 100%);
+}
+
+.div-content {
+    padding: 2em;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.texto h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+.centrardiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: aqua;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+/* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 18%, rgba(0, 212, 255, 1) 100%);
+*/
